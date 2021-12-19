@@ -1,7 +1,7 @@
 <html lang="en" style="height: auto;"><head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3{{ isset($title) ? ' | '.$title:'' }}</title>
+  <title>Laundry Cahaya{{ isset($title) ? ' | '.$title:'' }}</title>
 
     @include('layouts.inc.ext-css')
 </head>

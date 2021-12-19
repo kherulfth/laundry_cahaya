@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('Berandas');
 });
 
 Route::group(['middleware'=>'auth'],function(){
@@ -22,7 +22,9 @@ Route::group(['middleware'=>'auth'],function(){
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', function(){
+    return redirect('Berandas');
+});
 
 Route::get('keluar', function(){
     \Auth::logout();
