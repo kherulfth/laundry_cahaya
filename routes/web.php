@@ -14,3 +14,17 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::group(['middleware'=>'auth'],function(){
+    // Route::get('beranda','Beranda_controller@index');
+    Route::resource('Berandas', 'Beranda_controlller');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('keluar', function(){
+    \Auth::logout();
+    return redirect('login');
+});
