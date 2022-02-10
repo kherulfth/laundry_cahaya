@@ -7,11 +7,12 @@
 <br>
 <br>
 <br>
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-6">
             <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+                <div class="card-header" align="center">{{ __('Form Login') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">

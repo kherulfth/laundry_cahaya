@@ -41,4 +41,7 @@
 
 @include('layouts.inc.ext-js')
 
-</body></html>
+</body>
+@include('layouts.inc.ext-script')
+
+</html>

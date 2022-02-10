@@ -52,9 +52,33 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a href="{{ url('/keluar') }}" class="nav-link">
-            <i class="fas fa-sign-in-alt"></i>
-              <p>Logout</p>
+            <a href="{{  route('paket.index') }}" class="nav-link">
+            <i class="fas fa-folder-open"></i>
+              <p>Paket Laundry</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{{  route('customer.index') }}" class="nav-link">
+            <i class="fas fa-users"></i>
+              <p>Customer</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{{  route('statuspesanan.index') }}" class="nav-link">
+              <i class="far fa-file-alt"></i>
+              <p>Status Pesanan</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{{  route('statuspembayaran.index') }}" class="nav-link">
+              <i class="far fa-file-alt"></i>
+              <p>Status Pembayaran</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{{  route('transaksipesanan.index') }}" class="nav-link">
+              <i class="far fa-file-alt"></i>
+              <p>Transaksi Pesanan</p>
             </a>
           </li>
           <li class="nav-item">
